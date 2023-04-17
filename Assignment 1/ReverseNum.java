@@ -24,4 +24,4 @@ class rev{
     sc.close();
   }
   
-}
+} 
