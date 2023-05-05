@@ -1,6 +1,7 @@
-//Write a java program to traverse a graph using breadth first search (use ArrayDeque collection)
+/*Write a java program to traverse a graph using depth first search (use
+Stack collection ).*/
 import java.util.*;
-class BFS{
+class DFS{
     public static void main(String[] args) {
         int[][] graph = {
             {0, 1, 1, 0, 0, 0, 0, 0},
@@ -14,15 +15,15 @@ class BFS{
         };
         int[] visited = new int[graph.length];
         int start = 0;
-        ArrayDeque<Integer> queue = new ArrayDeque<>();
-        queue.add(start);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(start);
         visited[start] = 1;
-        while (!queue.isEmpty()) {
-            int current = queue.remove();
+        while (!stack.isEmpty()) {
+            int current = stack.pop();
             System.out.print(current + " ");
             for (int i = 0; i < graph.length; i++) {
                 if (graph[current][i] == 1 && visited[i] == 0) {
-                    queue.add(i);
+                    stack.push(i);
                     visited[i] = 1;
                 }
             }

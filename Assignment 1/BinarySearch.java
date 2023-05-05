@@ -37,9 +37,12 @@ class Sub {
             else {
                 end = mid - 1; // search in the left half
             }
+            sc.close();
         }
         
         System.out.println("Element is not found!");
+       
     }
+    
 }
 

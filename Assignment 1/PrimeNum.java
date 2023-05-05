@@ -11,6 +11,7 @@ public static void main(String[] args) {
         if (n % i == 0) {
             counter++;
         }
+        sc.close();
     }
 
     if (counter==2)
@@ -18,4 +19,5 @@ public static void main(String[] args) {
     else
       System.out.println(n + " is not a prime number."); 
   }
+  
 }

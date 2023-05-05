@@ -19,6 +19,7 @@ class bin {
             System.out.print("Binary representation of the given number is: ");
             while (!binaryStack.isEmpty()) {
                 System.out.print(binaryStack.pop());
+                input.close();
             }
         }
     }
